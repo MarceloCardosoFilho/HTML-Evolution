@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+        <h1 style="text-align: center";> Formulário</h1><br><br>
+        
+            <form action="arquivo.php" method="get"> <!--Ainda não estudei, mas deixei aqui como curiosidade>-->
+            <!--Nome-->
+                <label for="campo_nome">Nome:</label>
+                <input id="campo_nome" type="text" placeholder="Escreva seu nome" required><br><br>
+
+            <!--Sobrenome-->
+                <label for="campo_sobrenome">Sobrenome:</label>
+                <input id="campo_sobrenome" type="text"          placeholder="Escreva seu sobrenome" required><br><br>
+
+            <!--Email-->
+                <label for="campo_email">Email:</label>
+                <input id="campo_email" type="email"          placeholder="Escreva seu email" required><br><br>
+
+            <!--Senha-->
+                <label for="senha">Senha:</label>
+                <input id="senha" type="password"      placeholder="Escreva sua senha" required><br><br>
+            
+        <br>
+
+            <h2 style="text-align: left";> Opções</h2>
+                <input type="radio" id="dog" name="animal" value="cachorro"> 
+                <label for="dog">Cachorro</label><br>
+                <input type="radio" id="cat" name="animal" value="gato"> 
+                <label for="cat">Gato</label><br><br>
+            </h2>
+        <br>
+            <h3>O que há?</h3>
+                <input id="item1" type="checkbox" name="item1" value="Tv1">
+                <label for="item1">TV1</label><br>
+                <input id="item2" type="checkbox" name="item2" value="Tv2">
+                <label for="item2">TV2</label><br>
+                <input id="item3" type="checkbox" name="item3" value="Tv3">
+                <label for="item3">TV3</label>
+                
+        <br><br>
+                <h3>Escolha uma cor</h3>
+                <select name="cores">
+                    <option selected disabled value="">Selecione uma cor</option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="Amarelo">Amarelo</option>
+                    <option value="Verde">Verde</option>
+                    <option value="azul">Azul</option>
+                </select>
+
+         <br><br>
+                <h4>Digite uma mensagem:
+                <textarea name="mensagem" placeholder="Digite aqui sua mensagem" rows="15" cols="55"></textarea>
+                </h4>
+         <br><br>       
+            <!--Botão de Enviar-->
+            <input type="submit" value="Enviar Formulário">
+        
+        <br><br>         
+    <a href="1.ConhecimentosBásicos.html">Voltar para a página principal.</a>
+</body>
+</html>
